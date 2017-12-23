@@ -54,6 +54,7 @@ print('For population = 70,000, we predict a profit of {:0.3f} (This value shoul
 
 input('Program paused. Press ENTER to continue')
 
+
 # ===================== Part 3: Visualizing J(theta0, theta1) =====================
 print('Visualizing J(theta0, theta1) ...')
 
