@@ -3,20 +3,20 @@ import numpy as np
 from matplotlib.colors import LogNorm
 from mpl_toolkits.mplot3d import axes3d, Axes3D
 
-from computeCost import *
-from gradientDescent import *
-from plotData import *
+from computeCost import compute_cost
+from gradientDescent import gradient_descent
+from plotData import plot_data
 
 
 # ===================== Part 1: Plotting =====================
 print('Plotting Data...')
-data = np.loadtxt('ex1data1.txt', delimiter=',', usecols=(0, 1))
+data = np.loadtxt('ex1data1.txt', delimiter=',', usecols=(0, 1)) # which col to read
 X = data[:, 0]
 y = data[:, 1]
 m = y.size
 
-plt.ion()
-plt.figure(0)
+plt.ion() # Turn interactive mode on
+plt.figure(0) # Creates a new figure
 plot_data(X, y)
 
 input('Program paused. Press ENTER to continue')
